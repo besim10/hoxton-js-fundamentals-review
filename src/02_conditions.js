@@ -11,11 +11,11 @@ function getShorterString(a,b){
     else return a
 }
 // 1.1 Call the function with "Bob" and "Steven" as arguments.
-console.log(getShorterString('Bob','Steven'))
+getShorterString('Bob','Steven')
 // 1.2. Call the function with "Henrica" and "Mark" as arguments.
-console.log(getShorterString('Henrica','Mark'))
+getShorterString('Henrica','Mark')
 // 1.3. Call the function with any arguments we like to test the remaining use case.
-console.log(getShorterString('Henrica','Henrica'))
+getShorterString('Henrica','Henrica')
 
 // 2. for this exercise, nasty birds are pigeon, seagull and bin chicken. All other birds are clean.
 // Write a function called checkDirtyBirds which takes an array of bird species as an argument.
@@ -39,8 +39,8 @@ function checkDirtyBirds(array){
 
 // 2.1 Test all the scenarios by calling the function with different arguments.
 
-console.log(checkDirtyBirds(['pigeon', 'seagull', 'bin chicken']))
-console.log(checkDirtyBirds(['pigeon', 'owls', 'bin chicken']))
-console.log(checkDirtyBirds(['stork', 'owls', 'bin chicken']))
-console.log(checkDirtyBirds(['pengiuns', 'herons', 'swifts']))
+checkDirtyBirds(['pigeon', 'seagull', 'bin chicken'])
+checkDirtyBirds(['pigeon', 'owls', 'bin chicken'])
+checkDirtyBirds(['stork', 'owls', 'bin chicken'])
+checkDirtyBirds(['pengiuns', 'herons', 'swifts'])
 
