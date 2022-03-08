@@ -49,6 +49,6 @@ const functionThatUpperCaseName = getGreet(true)
 const functionThatNotUpperCaseName = getGreet(false)
 //   - if `shouldCapitalise` is true, it should greet the person with a capitalised name.
 // 6.1 Using this new function, say hello to yourself in uppercase, and console.log it
-console.log(functionThatUpperCaseName('Hello Besim'))
+functionThatUpperCaseName('Hello Besim')
 
-console.log(functionThatNotUpperCaseName('Hello Besim'))
+functionThatNotUpperCaseName('Hello Besim')
