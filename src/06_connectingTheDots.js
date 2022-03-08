@@ -12,14 +12,54 @@
 // You want to keep track of your money. To do that:
 // 1. Store all the information in the most appropriate JS data structure you can think of.
 // Note: You may want to add a unique identifier to each account.
+const accounts = [
+    {
+        id: 1,
+        bankName: 'America',
+        amount: 500
+    },
+    {
+        id: 2,
+        bankName: 'Tirana',
+        amount: 1000
+    },
+    {
+        id: 3,
+        bankName: 'England',
+        amount: 69
+    },
+    {
+        id: 4,
+        bankName: 'HSBC',
+        amount: 100
+    },
+    {
+        id: 5,
+        bankName: 'Italy',
+        amount: 200
+    }
+]
 
 // Now, without directly typing the data:
 // 2. Find a way to find out how much money is in a selected account.
-
+accounts[3].amount
 // 3. Find a way to find out how much money you have in total.
+let totalMoney = 0
+for(const account of accounts){
+    totalMoney += account.amount
+}
+// console.log(totalMoney)
 
 // 4. Find a way to add money to a selected account.
 // 4.1 And subtract too.
+accounts[0].amount = accounts[0].amount + 100
+accounts[2].amount = accounts[2].amount - 25
+
+// console.log(accounts)
 
 // 5. Each bank account has an account number. For this exercise, an account number is a 5 digit integer.
 // Find a way to add that information into the existing shape.
+for(const account of accounts){
+    account.accountNumber = 12345
+}
+// console.log(accounts)
